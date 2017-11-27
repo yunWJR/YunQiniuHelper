@@ -13,8 +13,8 @@
 		AE41414F1FC81A3E00650AC5 /* YunQiniuUploadImageTool.h in Headers */ = {isa = PBXBuildFile; fileRef = AE4141491FC81A3D00650AC5 /* YunQiniuUploadImageTool.h */; };
 		AE4141501FC81A3E00650AC5 /* YunQiniuUploadData.h in Headers */ = {isa = PBXBuildFile; fileRef = AE41414A1FC81A3E00650AC5 /* YunQiniuUploadData.h */; };
 		AE4141511FC81A3E00650AC5 /* YunQiniuUploadImageTool.m in Sources */ = {isa = PBXBuildFile; fileRef = AE41414B1FC81A3E00650AC5 /* YunQiniuUploadImageTool.m */; };
-		AE4141521FC81A3E00650AC5 /* YunQnImgHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = AE41414C1FC81A3E00650AC5 /* YunQnImgHelper.h */; };
-		AE4141531FC81A3E00650AC5 /* YunQnImgHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = AE41414D1FC81A3E00650AC5 /* YunQnImgHelper.m */; };
+		AE4141521FC81A3E00650AC5 /* YunQiniuImgHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = AE41414C1FC81A3E00650AC5 /* YunQiniuImgHelper.h */; };
+		AE4141531FC81A3E00650AC5 /* YunQiniuImgHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = AE41414D1FC81A3E00650AC5 /* YunQiniuImgHelper.m */; };
 		AE4141541FC81A3E00650AC5 /* YunQiniuUploadData.m in Sources */ = {isa = PBXBuildFile; fileRef = AE41414E1FC81A3E00650AC5 /* YunQiniuUploadData.m */; };
 /* End PBXBuildFile section */
 
@@ -27,8 +27,8 @@
 		AE4141491FC81A3D00650AC5 /* YunQiniuUploadImageTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YunQiniuUploadImageTool.h; sourceTree = "<group>"; };
 		AE41414A1FC81A3E00650AC5 /* YunQiniuUploadData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YunQiniuUploadData.h; sourceTree = "<group>"; };
 		AE41414B1FC81A3E00650AC5 /* YunQiniuUploadImageTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YunQiniuUploadImageTool.m; sourceTree = "<group>"; };
-		AE41414C1FC81A3E00650AC5 /* YunQnImgHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YunQnImgHelper.h; sourceTree = "<group>"; };
-		AE41414D1FC81A3E00650AC5 /* YunQnImgHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YunQnImgHelper.m; sourceTree = "<group>"; };
+		AE41414C1FC81A3E00650AC5 /* YunQiniuImgHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YunQiniuImgHelper.h; sourceTree = "<group>"; };
+		AE41414D1FC81A3E00650AC5 /* YunQiniuImgHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YunQiniuImgHelper.m; sourceTree = "<group>"; };
 		AE41414E1FC81A3E00650AC5 /* YunQiniuUploadData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YunQiniuUploadData.m; sourceTree = "<group>"; };
 		BBADCED882F71852CB78D410 /* Pods-YunQiniuHelper.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YunQiniuHelper.release.xcconfig"; path = "Pods/Target Support Files/Pods-YunQiniuHelper/Pods-YunQiniuHelper.release.xcconfig"; sourceTree = "<group>"; };
 		F4390986E426925C8546D60F /* Pods-YunQiniuHelper.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YunQiniuHelper.debug.xcconfig"; path = "Pods/Target Support Files/Pods-YunQiniuHelper/Pods-YunQiniuHelper.debug.xcconfig"; sourceTree = "<group>"; };
@@ -88,8 +88,8 @@
 				AE41414E1FC81A3E00650AC5 /* YunQiniuUploadData.m */,
 				AE4141491FC81A3D00650AC5 /* YunQiniuUploadImageTool.h */,
 				AE41414B1FC81A3E00650AC5 /* YunQiniuUploadImageTool.m */,
-				AE41414C1FC81A3E00650AC5 /* YunQnImgHelper.h */,
-				AE41414D1FC81A3E00650AC5 /* YunQnImgHelper.m */,
+				AE41414C1FC81A3E00650AC5 /* YunQiniuImgHelper.h */,
+				AE41414D1FC81A3E00650AC5 /* YunQiniuImgHelper.m */,
 				AE4141411FC8198D00650AC5 /* YunQiniuHelper.h */,
 				AE4141421FC8198D00650AC5 /* Info.plist */,
 				1D4D2E89DE9DB882939C97F8 /* YunQiniuDefine.h */,
@@ -106,7 +106,7 @@
 			files = (
 				AE41414F1FC81A3E00650AC5 /* YunQiniuUploadImageTool.h in Headers */,
 				AE4141431FC8198D00650AC5 /* YunQiniuHelper.h in Headers */,
-				AE4141521FC81A3E00650AC5 /* YunQnImgHelper.h in Headers */,
+				AE4141521FC81A3E00650AC5 /* YunQiniuImgHelper.h in Headers */,
 				AE4141501FC81A3E00650AC5 /* YunQiniuUploadData.h in Headers */,
 				1D4D2D703340A81DADCEBE43 /* YunQiniuDefine.h in Headers */,
 			);
@@ -220,7 +220,7 @@
 			files = (
 				AE4141541FC81A3E00650AC5 /* YunQiniuUploadData.m in Sources */,
 				AE4141511FC81A3E00650AC5 /* YunQiniuUploadImageTool.m in Sources */,
-				AE4141531FC81A3E00650AC5 /* YunQnImgHelper.m in Sources */,
+				AE4141531FC81A3E00650AC5 /* YunQiniuImgHelper.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

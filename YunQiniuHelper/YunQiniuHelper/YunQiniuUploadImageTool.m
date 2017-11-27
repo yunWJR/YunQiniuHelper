@@ -30,17 +30,17 @@
 + (void)uploadImage:(UIImage *)image
            progress:(QNUpProgressHandler)progress
             success:(void (^)(NSString *url))success
-            failure:(void (^)(void))failure {
+            failure:(void (^)(NSError *err))failure {
     [self getQnPara:^(BOOL suc, NSString *token, NSString *cdnUrl) {
         if (!suc) {
-            if (failure) {failure();}
+            if (failure) {failure([self errWithType:QqHlpErr_errQnPara]);}
         }
 
         // 压缩
         NSData *data = UIImageJPEGRepresentation(image, YunQiniuUploadData.instance.cmpFactor);
 
         if (!data) {
-            if (failure) {failure();}
+            if (failure) {failure([self errWithType:QqHlpErr_errImg]);}
 
             return;
         }
@@ -75,7 +75,7 @@
                      }
                  }
                  else {
-                     if (failure) {failure();}
+                     if (failure) {failure(info.error);}
                  }
              } option:opt];
     }];
@@ -84,8 +84,8 @@
 //上传多张图片
 + (void)uploadImages:(NSArray<UIImage *> *)imageList
             progress:(void (^)(CGFloat))progress
-             success:(void (^)(NSArray<NSString *> *))success
-             failure:(void (^)(void))failure {
+             success:(void (^)(NSArray<NSString *> *urlList))success
+             failure:(void (^)(NSError *err))failure {
     if (imageList == nil || imageList.count == 0) {
         if (success) {success(nil);}
         return;
@@ -99,16 +99,19 @@
 
     YunQiniuUploadData *upHlp = [YunQiniuUploadData instance];
     __weak typeof(upHlp) weakHlp = upHlp;
-    upHlp.failureBlock = ^() {
-        if (failure) {failure();}
+    upHlp.failureBlock = ^(NSError *err) {
+        if (failure) {failure(err);}
         return;
     };
 
     upHlp.sucBlock = ^(NSString *url) {
         [listUrl addObject:url];
-        totalPrgs += partPrgs;
-        progress(totalPrgs);
         curIndex++;
+
+        totalPrgs += partPrgs;
+        if (progress) {
+            progress(totalPrgs);
+        }
 
         if ([listUrl count] == [imageList count]) {
             success([listUrl copy]);
@@ -131,8 +134,8 @@
 + (void)uploadImages:(NSArray<UIImage *> *)imageList
             progress:(void (^)(CGFloat))progress
                   tg:(id)tg
-             success:(void (^)(NSArray<NSString *> *))success
-             failure:(void (^)(void))failure {
+             success:(void (^)(NSArray<NSString *> *urlList))success
+             failure:(void (^)(NSError *err))failure {
     [self setDelegate:tg];
 
     [self uploadImages:imageList
@@ -145,6 +148,12 @@
     NSString *url = resp[@"url"];
 
     return url;
+}
+
++ (NSError *)errWithType:(QiNiuHelperError)type {
+    return [NSError errorWithDomain:@"QiNiuHelper"
+                               code:type
+                           userInfo:nil];
 }
 
 @end

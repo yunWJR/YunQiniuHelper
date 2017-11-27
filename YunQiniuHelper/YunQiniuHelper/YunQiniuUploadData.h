@@ -16,7 +16,7 @@
 
 @property (copy, nonatomic) void (^sucBlock)(NSString *url);
 
-@property (copy, nonatomic) void (^failureBlock)(void);
+@property (copy, nonatomic) void (^failureBlock)(NSError *err);
 
 + (YunQiniuUploadData *)instance;
 

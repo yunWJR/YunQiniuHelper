@@ -5,6 +5,11 @@
 
 #import <Foundation/Foundation.h>
 
+typedef enum : NSInteger {
+    QqHlpErr_errQnPara,
+    QqHlpErr_errImg,
+} QiNiuHelperError;
+
 typedef void(^getQnParaBlock)(BOOL suc, NSString *token, NSString *cdnUrl);
 
 @protocol YunQiniuUploadImageDelegate <NSObject>
