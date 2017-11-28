@@ -25,16 +25,17 @@
     return _instance;
 }
 
-- (void)setDelegate:(id)tg {
-    [YunQiniuUploadImageTool setDelegate:tg];
-}
-
 - (instancetype)init {
     self = [super init];
     if (self) {
+        [YunQiniuUploadImageTool setDelegate:self];
     }
 
     return self;
+}
+
+- (void)setDelegate:(id)tg {
+    [YunQiniuUploadImageTool setDelegate:tg];
 }
 
 - (void)uploadImages:(NSArray<UIImage *> *)imgList
@@ -56,6 +57,12 @@
                                  progress:nil
                                   success:success
                                   failure:failure];
+}
+
+#pragma mark - YunQiniuUploadImageDelegate
+
+// 需要实现
+- (void)getQnPara:(getQnParaBlock)rst {
 }
 
 @end

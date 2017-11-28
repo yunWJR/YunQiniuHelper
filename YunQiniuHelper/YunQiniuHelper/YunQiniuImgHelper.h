@@ -6,7 +6,7 @@
 #import <UIKit/UIKit.h>
 #import "YunQiniuDefine.h"
 
-@interface YunQiniuImgHelper : NSObject
+@interface YunQiniuImgHelper : NSObject <YunQiniuUploadImageDelegate>
 
 + (YunQiniuImgHelper *)instance;
 
@@ -20,5 +20,8 @@
 - (void)uploadImages:(NSArray<UIImage *> *)imgList
              success:(void (^)(NSArray<NSString *> *urlList))success
              failure:(void (^)(NSError *err))failure;
+
+// 需要实现
+- (void)getQnPara:(getQnParaBlock)rst;
 
 @end
