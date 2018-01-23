@@ -18,19 +18,19 @@
 *@param success成功block返回url地址
 *@param failure失败block
 */
-+ (void)uploadImage:(UIImage *)image
++ (void)uploadImage:(id)image
            progress:(QNUpProgressHandler)progress
             success:(void (^)(NSString *url))success
             failure:(void (^)(NSError *err))failure;
 
 //上传多张图片,按队列依次上传
-+ (void)uploadImages:(NSArray<UIImage *> *)imageList
++ (void)uploadImages:(NSArray*)imageList
             progress:(void (^)(CGFloat))progress
              success:(void (^)(NSArray<NSString *> *urlList))success
              failure:(void (^)(NSError *err))failure;
 
 //上传多张图片,按队列依次上传
-+ (void)uploadImages:(NSArray<UIImage *> *)imageList
++ (void)uploadImages:(NSArray*)imageList
             progress:(void (^)(CGFloat))progress
                   tg:(id)tg
              success:(void (^)(NSArray<NSString *> *urlList))success

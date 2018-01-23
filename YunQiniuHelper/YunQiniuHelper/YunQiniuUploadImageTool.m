@@ -27,7 +27,7 @@
 }
 
 // 上传单张图片
-+ (void)uploadImage:(UIImage *)image
++ (void)uploadImage:(id)image
            progress:(QNUpProgressHandler)progress
             success:(void (^)(NSString *url))success
             failure:(void (^)(NSError *err))failure {
@@ -37,7 +37,18 @@
         }
 
         // 压缩
-        NSData *data = UIImageJPEGRepresentation(image, YunQiniuUploadData.instance.cmpFactor);
+        NSData *data = nil;
+        if ([image isKindOfClass:UIImage.class]) {
+            data = UIImageJPEGRepresentation(image, YunQiniuUploadData.instance.cmpFactor);
+        }
+        else if ([image isKindOfClass:NSData.class]) {
+            data = image;
+        }
+        else {
+            if (failure) {failure([self errWithType:QqHlpErr_errImg]);}
+
+            return;
+        }
 
         if (!data) {
             if (failure) {failure([self errWithType:QqHlpErr_errImg]);}
@@ -82,7 +93,7 @@
 }
 
 //上传多张图片
-+ (void)uploadImages:(NSArray<UIImage *> *)imageList
++ (void)uploadImages:(NSArray *)imageList
             progress:(void (^)(CGFloat))progress
              success:(void (^)(NSArray<NSString *> *urlList))success
              failure:(void (^)(NSError *err))failure {
@@ -131,7 +142,7 @@
                                  failure:weakHlp.failureBlock];
 }
 
-+ (void)uploadImages:(NSArray<UIImage *> *)imageList
++ (void)uploadImages:(NSArray *)imageList
             progress:(void (^)(CGFloat))progress
                   tg:(id)tg
              success:(void (^)(NSArray<NSString *> *urlList))success
