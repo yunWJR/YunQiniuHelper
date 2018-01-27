@@ -24,13 +24,13 @@
             failure:(void (^)(NSError *err))failure;
 
 //上传多张图片,按队列依次上传
-+ (void)uploadImages:(NSArray*)imageList
++ (void)uploadImages:(NSArray *)imageList
             progress:(void (^)(CGFloat))progress
              success:(void (^)(NSArray<NSString *> *urlList))success
              failure:(void (^)(NSError *err))failure;
 
 //上传多张图片,按队列依次上传
-+ (void)uploadImages:(NSArray*)imageList
++ (void)uploadImages:(NSArray *)imageList
             progress:(void (^)(CGFloat))progress
                   tg:(id)tg
              success:(void (^)(NSArray<NSString *> *urlList))success

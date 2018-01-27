@@ -12,11 +12,13 @@
 
 - (void)setDelegate:(id)tg;
 
+// item =image/data(image)
 - (void)uploadImages:(NSArray *)imgList
             progress:(void (^)(CGFloat))progress
              success:(void (^)(NSArray<NSString *> *urlList))success
              failure:(void (^)(NSError *err))failure;
 
+// item =image/data(image)
 - (void)uploadImages:(NSArray *)imgList
              success:(void (^)(NSArray<NSString *> *urlList))success
              failure:(void (^)(NSError *err))failure;
