@@ -10,7 +10,7 @@ target 'YunQiniuHelper' do
 
   # Pods for YunQiniuHelper
 
-  pod 'Qiniu', '~> 7.1'
+  pod 'Qiniu'
   # pod "Qiniu", :git => 'https://github.com/qiniu/objc-sdk.git', :branch => 'AFNetworking-3.x'
 
 end

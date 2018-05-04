@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "YunQiniuHelper"
-  s.version      = "0.0.2"
+  s.version      = "0.0.3"
   s.summary      = "qiniu upload hleper"
 
   # This description is used to generate tags and improve search results.
@@ -65,7 +65,7 @@ Pod::Spec.new do |s|
   #
 
   # s.platform     = :ios
-  s.platform     = :ios, "8.0"
+  s.platform     = :ios, "9.0"
 
   #  When using multiple platforms
   # s.ios.deployment_target = "5.0"
@@ -132,7 +132,7 @@ Pod::Spec.new do |s|
 
   s.requires_arc = true
 
-  s.dependency "Qiniu", "~> 7.1"
+  s.dependency "Qiniu"
   # s.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
 
 end

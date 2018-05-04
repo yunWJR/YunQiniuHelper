@@ -2,104 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="afe093c1-9619-4cfb-a48d-8efe3c1f23d5" name="Default" comment="change api">
-      <change beforePath="$PROJECT_DIR$/../YunQiniuHelper.podspec" afterPath="$PROJECT_DIR$/../YunQiniuHelper.podspec" />
-      <change beforePath="$PROJECT_DIR$/Podfile" afterPath="$PROJECT_DIR$/Podfile" />
-      <change beforePath="$PROJECT_DIR$/Podfile.lock" afterPath="$PROJECT_DIR$/Podfile.lock" />
-      <change beforePath="$PROJECT_DIR$/Pods/AFNetworking/AFNetworking/AFHTTPSessionManager.h" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Pods/AFNetworking/AFNetworking/AFHTTPSessionManager.m" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Pods/AFNetworking/AFNetworking/AFNetworkReachabilityManager.h" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Pods/AFNetworking/AFNetworking/AFNetworkReachabilityManager.m" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Pods/AFNetworking/AFNetworking/AFNetworking.h" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Pods/AFNetworking/AFNetworking/AFSecurityPolicy.h" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Pods/AFNetworking/AFNetworking/AFSecurityPolicy.m" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Pods/AFNetworking/AFNetworking/AFURLRequestSerialization.h" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Pods/AFNetworking/AFNetworking/AFURLRequestSerialization.m" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Pods/AFNetworking/AFNetworking/AFURLResponseSerialization.h" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Pods/AFNetworking/AFNetworking/AFURLResponseSerialization.m" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Pods/AFNetworking/AFNetworking/AFURLSessionManager.h" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Pods/AFNetworking/AFNetworking/AFURLSessionManager.m" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Pods/AFNetworking/LICENSE" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Pods/AFNetworking/README.md" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Pods/AFNetworking/UIKit+AFNetworking/AFAutoPurgingImageCache.h" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Pods/AFNetworking/UIKit+AFNetworking/AFAutoPurgingImageCache.m" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Pods/AFNetworking/UIKit+AFNetworking/AFImageDownloader.h" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Pods/AFNetworking/UIKit+AFNetworking/AFImageDownloader.m" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Pods/AFNetworking/UIKit+AFNetworking/AFNetworkActivityIndicatorManager.h" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Pods/AFNetworking/UIKit+AFNetworking/AFNetworkActivityIndicatorManager.m" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Pods/AFNetworking/UIKit+AFNetworking/UIActivityIndicatorView+AFNetworking.h" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Pods/AFNetworking/UIKit+AFNetworking/UIActivityIndicatorView+AFNetworking.m" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Pods/AFNetworking/UIKit+AFNetworking/UIButton+AFNetworking.h" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Pods/AFNetworking/UIKit+AFNetworking/UIButton+AFNetworking.m" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Pods/AFNetworking/UIKit+AFNetworking/UIImage+AFNetworking.h" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Pods/AFNetworking/UIKit+AFNetworking/UIImageView+AFNetworking.h" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Pods/AFNetworking/UIKit+AFNetworking/UIImageView+AFNetworking.m" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Pods/AFNetworking/UIKit+AFNetworking/UIKit+AFNetworking.h" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Pods/AFNetworking/UIKit+AFNetworking/UIProgressView+AFNetworking.h" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Pods/AFNetworking/UIKit+AFNetworking/UIProgressView+AFNetworking.m" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Pods/AFNetworking/UIKit+AFNetworking/UIRefreshControl+AFNetworking.h" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Pods/AFNetworking/UIKit+AFNetworking/UIRefreshControl+AFNetworking.m" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Pods/AFNetworking/UIKit+AFNetworking/UIWebView+AFNetworking.h" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Pods/AFNetworking/UIKit+AFNetworking/UIWebView+AFNetworking.m" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Pods/Headers/Private/AFNetworking/AFAutoPurgingImageCache.h" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Pods/Headers/Private/AFNetworking/AFHTTPSessionManager.h" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Pods/Headers/Private/AFNetworking/AFImageDownloader.h" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Pods/Headers/Private/AFNetworking/AFNetworkActivityIndicatorManager.h" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Pods/Headers/Private/AFNetworking/AFNetworkReachabilityManager.h" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Pods/Headers/Private/AFNetworking/AFNetworking.h" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Pods/Headers/Private/AFNetworking/AFSecurityPolicy.h" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Pods/Headers/Private/AFNetworking/AFURLRequestSerialization.h" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Pods/Headers/Private/AFNetworking/AFURLResponseSerialization.h" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Pods/Headers/Private/AFNetworking/AFURLSessionManager.h" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Pods/Headers/Private/AFNetworking/UIActivityIndicatorView+AFNetworking.h" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Pods/Headers/Private/AFNetworking/UIButton+AFNetworking.h" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Pods/Headers/Private/AFNetworking/UIImage+AFNetworking.h" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Pods/Headers/Private/AFNetworking/UIImageView+AFNetworking.h" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Pods/Headers/Private/AFNetworking/UIKit+AFNetworking.h" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Pods/Headers/Private/AFNetworking/UIProgressView+AFNetworking.h" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Pods/Headers/Private/AFNetworking/UIRefreshControl+AFNetworking.h" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Pods/Headers/Private/AFNetworking/UIWebView+AFNetworking.h" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Pods/Headers/Public/AFNetworking/AFAutoPurgingImageCache.h" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Pods/Headers/Public/AFNetworking/AFHTTPSessionManager.h" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Pods/Headers/Public/AFNetworking/AFImageDownloader.h" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Pods/Headers/Public/AFNetworking/AFNetworkActivityIndicatorManager.h" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Pods/Headers/Public/AFNetworking/AFNetworkReachabilityManager.h" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Pods/Headers/Public/AFNetworking/AFNetworking.h" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Pods/Headers/Public/AFNetworking/AFSecurityPolicy.h" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Pods/Headers/Public/AFNetworking/AFURLRequestSerialization.h" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Pods/Headers/Public/AFNetworking/AFURLResponseSerialization.h" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Pods/Headers/Public/AFNetworking/AFURLSessionManager.h" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Pods/Headers/Public/AFNetworking/UIActivityIndicatorView+AFNetworking.h" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Pods/Headers/Public/AFNetworking/UIButton+AFNetworking.h" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Pods/Headers/Public/AFNetworking/UIImage+AFNetworking.h" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Pods/Headers/Public/AFNetworking/UIImageView+AFNetworking.h" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Pods/Headers/Public/AFNetworking/UIKit+AFNetworking.h" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Pods/Headers/Public/AFNetworking/UIProgressView+AFNetworking.h" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Pods/Headers/Public/AFNetworking/UIRefreshControl+AFNetworking.h" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Pods/Headers/Public/AFNetworking/UIWebView+AFNetworking.h" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Pods/Manifest.lock" afterPath="$PROJECT_DIR$/Pods/Manifest.lock" />
-      <change beforePath="$PROJECT_DIR$/Pods/Pods.xcodeproj/project.pbxproj" afterPath="$PROJECT_DIR$/Pods/Pods.xcodeproj/project.pbxproj" />
-      <change beforePath="$PROJECT_DIR$/Pods/Qiniu/QiniuSDK/Common/QNVersion.h" afterPath="$PROJECT_DIR$/Pods/Qiniu/QiniuSDK/Common/QNVersion.h" />
-      <change beforePath="$PROJECT_DIR$/Pods/Qiniu/QiniuSDK/Http/QNResponseInfo.m" afterPath="$PROJECT_DIR$/Pods/Qiniu/QiniuSDK/Http/QNResponseInfo.m" />
-      <change beforePath="$PROJECT_DIR$/Pods/Qiniu/QiniuSDK/Http/QNSessionManager.m" afterPath="$PROJECT_DIR$/Pods/Qiniu/QiniuSDK/Http/QNSessionManager.m" />
-      <change beforePath="$PROJECT_DIR$/Pods/Qiniu/QiniuSDK/Recorder/QNFileRecorder.m" afterPath="$PROJECT_DIR$/Pods/Qiniu/QiniuSDK/Recorder/QNFileRecorder.m" />
-      <change beforePath="$PROJECT_DIR$/Pods/Qiniu/QiniuSDK/Storage/QNConfiguration.h" afterPath="$PROJECT_DIR$/Pods/Qiniu/QiniuSDK/Storage/QNConfiguration.h" />
-      <change beforePath="$PROJECT_DIR$/Pods/Qiniu/QiniuSDK/Storage/QNConfiguration.m" afterPath="$PROJECT_DIR$/Pods/Qiniu/QiniuSDK/Storage/QNConfiguration.m" />
-      <change beforePath="$PROJECT_DIR$/Pods/Qiniu/QiniuSDK/Storage/QNFormUpload.m" afterPath="$PROJECT_DIR$/Pods/Qiniu/QiniuSDK/Storage/QNFormUpload.m" />
-      <change beforePath="$PROJECT_DIR$/Pods/Qiniu/QiniuSDK/Storage/QNUpToken.m" afterPath="$PROJECT_DIR$/Pods/Qiniu/QiniuSDK/Storage/QNUpToken.m" />
-      <change beforePath="$PROJECT_DIR$/Pods/Qiniu/README.md" afterPath="$PROJECT_DIR$/Pods/Qiniu/README.md" />
-      <change beforePath="$PROJECT_DIR$/Pods/Target Support Files/AFNetworking/AFNetworking-dummy.m" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Pods/Target Support Files/AFNetworking/AFNetworking-prefix.pch" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Pods/Target Support Files/AFNetworking/AFNetworking.xcconfig" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Pods/Target Support Files/HappyDNS/HappyDNS.xcconfig" afterPath="$PROJECT_DIR$/Pods/Target Support Files/HappyDNS/HappyDNS.xcconfig" />
-      <change beforePath="$PROJECT_DIR$/Pods/Target Support Files/Pods-YunQiniuHelper/Pods-YunQiniuHelper-acknowledgements.markdown" afterPath="$PROJECT_DIR$/Pods/Target Support Files/Pods-YunQiniuHelper/Pods-YunQiniuHelper-acknowledgements.markdown" />
-      <change beforePath="$PROJECT_DIR$/Pods/Target Support Files/Pods-YunQiniuHelper/Pods-YunQiniuHelper-acknowledgements.plist" afterPath="$PROJECT_DIR$/Pods/Target Support Files/Pods-YunQiniuHelper/Pods-YunQiniuHelper-acknowledgements.plist" />
-      <change beforePath="$PROJECT_DIR$/Pods/Target Support Files/Pods-YunQiniuHelper/Pods-YunQiniuHelper.debug.xcconfig" afterPath="$PROJECT_DIR$/Pods/Target Support Files/Pods-YunQiniuHelper/Pods-YunQiniuHelper.debug.xcconfig" />
-      <change beforePath="$PROJECT_DIR$/Pods/Target Support Files/Pods-YunQiniuHelper/Pods-YunQiniuHelper.release.xcconfig" afterPath="$PROJECT_DIR$/Pods/Target Support Files/Pods-YunQiniuHelper/Pods-YunQiniuHelper.release.xcconfig" />
-      <change beforePath="$PROJECT_DIR$/Pods/Target Support Files/Qiniu/Qiniu.xcconfig" afterPath="$PROJECT_DIR$/Pods/Target Support Files/Qiniu/Qiniu.xcconfig" />
-      <change beforePath="$PROJECT_DIR$/YunQiniuHelper.xcodeproj/project.pbxproj" afterPath="$PROJECT_DIR$/YunQiniuHelper.xcodeproj/project.pbxproj" />
-      <change beforePath="$PROJECT_DIR$/YunQiniuHelper/YunQiniuImgHelper.h" afterPath="$PROJECT_DIR$/YunQiniuHelper/YunQiniuImgHelper.h" />
-      <change beforePath="$PROJECT_DIR$/YunQiniuHelper/YunQiniuImgHelper.m" afterPath="$PROJECT_DIR$/YunQiniuHelper/YunQiniuImgHelper.m" />
-      <change beforePath="$PROJECT_DIR$/YunQiniuHelper/YunQiniuUploadImageTool.h" afterPath="$PROJECT_DIR$/YunQiniuHelper/YunQiniuUploadImageTool.h" />
+      <change beforePath="$PROJECT_DIR$/../YunQiniuHelper.podspec" beforeDir="false" afterPath="$PROJECT_DIR$/../YunQiniuHelper.podspec" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Podfile" beforeDir="false" afterPath="$PROJECT_DIR$/Podfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Podfile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Podfile.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/Manifest.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/Manifest.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/Pods.xcodeproj/project.pbxproj" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/Pods.xcodeproj/project.pbxproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/YunQiniuHelper/YunQiniuDefine.h" beforeDir="false" afterPath="$PROJECT_DIR$/YunQiniuHelper/YunQiniuDefine.h" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -110,13 +19,12 @@
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="iphoneos_12206484e7323519acc20b4c31043a0b582e05a1" />
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="Podfile" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Podfile">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
+      <file leaf-file-name="YunQiniuDefine.h" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/YunQiniuHelper/YunQiniuDefine.h">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="228">
-              <caret line="12" column="23" lean-forward="false" selection-start-line="12" selection-start-column="23" selection-end-line="12" selection-end-column="23" />
-              <folding />
+              <caret line="12" column="75" lean-forward="true" selection-start-line="12" selection-start-column="75" selection-end-line="12" selection-end-column="75" />
             </state>
           </provider>
         </entry>
@@ -124,9 +32,8 @@
       <file leaf-file-name="YunQiniuUploadImageTool.m" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/YunQiniuHelper/YunQiniuUploadImageTool.m">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="65" column="34" lean-forward="false" selection-start-line="65" selection-start-column="34" selection-end-line="65" selection-end-column="34" />
-              <folding />
+            <state relative-caret-position="256">
+              <caret line="47" column="60" selection-start-line="47" selection-start-column="52" selection-end-line="47" selection-end-column="67" />
             </state>
           </provider>
         </entry>
@@ -144,6 +51,7 @@
         <option value="$PROJECT_DIR$/YunQiniuHelper/YunQiniuImgHelper.m" />
         <option value="$PROJECT_DIR$/YunQiniuHelper/YunQiniuImgHelper.h" />
         <option value="$PROJECT_DIR$/Podfile" />
+        <option value="$PROJECT_DIR$/YunQiniuHelper/YunQiniuDefine.h" />
       </list>
     </option>
   </component>
@@ -153,28 +61,21 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
+  <component name="OCFindUsagesOptions" text="true" ivars="false" properties="true" derivedClasses="false" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="67" />
+    <option name="x" value="19" />
     <option name="y" value="23" />
     <option name="width" value="1853" />
     <option name="height" value="982" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
-    <navigator currentView="ProjectPane" proportions="" version="1">
-      <flattenPackages />
-      <showMembers />
-      <showModules />
-      <showLibraryContents />
-      <hideEmptyPackages />
-      <abbreviatePackageNames />
-      <autoscrollToSource />
-      <autoscrollFromSource />
-      <sortByType />
-      <manualOrder />
+    <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Cidr.FilesView" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -186,11 +87,15 @@
               <item name="" type="efc3779f:XcodeRootNode" />
               <item name="YunQiniuHelper" type="1d218c8b:XcodeProjectNode" />
             </path>
+            <path>
+              <item name="" type="efc3779f:XcodeRootNode" />
+              <item name="YunQiniuHelper" type="1d218c8b:XcodeProjectNode" />
+              <item name="YunQiniuHelper" type="fcab9f18:XcodeViewNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Cidr.FilesView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -209,15 +114,11 @@
     </option>
   </component>
   <component name="RunManager">
-    <configuration name="YunQiniuHelper" type="AppleRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="YunQiniuHelper" TARGET_NAME="YunQiniuHelper" CONFIG_NAME="Debug" SCHEME_NAME="YunQiniuHelper" MAKE_ACTIVE="TRUE">
-      <envs />
+    <configuration name="YunQiniuHelper" type="AppleRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="YunQiniuHelper" TARGET_NAME="YunQiniuHelper" CONFIG_NAME="Debug" SCHEME_NAME="YunQiniuHelper" IS_LOCATION_SIMULATION_ALLOWED="true" MAKE_ACTIVE="TRUE">
       <EXTENSION ID="org.jetbrains.appcode.reveal.RevealRunConfigurationExtension">
         <REVEAL_SETTINGS autoInject="false" autoInstall="true" askToEnableAutoInstall="true" />
       </EXTENSION>
     </configuration>
-  </component>
-  <component name="ShelveChangesManager" show_recycled="false">
-    <option name="remove_strategy" value="false" />
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -231,6 +132,8 @@
       <updated>1516677329306</updated>
       <workItem from="1516677330990" duration="97000" />
       <workItem from="1517019653776" duration="856000" />
+      <workItem from="1520239555763" duration="815000" />
+      <workItem from="1525414785406" duration="137000" />
     </task>
     <task id="LOCAL-00001" summary="change api">
       <created>1516677410319</created>
@@ -243,33 +146,34 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="953000" />
+    <option name="totallyTimeSpent" value="1905000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="67" y="23" width="1853" height="982" extended-state="0" />
+    <frame x="0" y="79" width="1853" height="982" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17952928" sideWeight="0.5" order="4" side_tool="false" content_ui="combo" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32554945" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.43533486" sideWeight="0.5210728" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.5011547" sideWeight="0.36726874" order="8" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.5011547" sideWeight="0.63273126" order="9" side_tool="false" content_ui="tabs" x="10" y="280" width="1259" height="240" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.12087912" sideWeight="0.725973" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.19171779" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3282967" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3392857" sideWeight="0.5641791" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="DB Browser" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32927573" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="DB Execution Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Code comment" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2747253" sideWeight="0.6225941" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" order="1" />
+      <window_info content_ui="combo" id="Project" order="4" visible="true" weight="0.17943107" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32554945" />
+      <window_info anchor="right" id="Palette&#9;" order="3" />
+      <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.37800875" side_tool="true" visible="true" weight="0.36805555" />
+      <window_info active="true" anchor="bottom" id="Find" order="1" sideWeight="0.6219913" visible="true" weight="0.36805555" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.725973" weight="0.12087912" />
+      <window_info anchor="bottom" x="10" y="280" width="1259" height="240" id="Version Control" order="9" sideWeight="0.6299945" weight="0.5011547" />
+      <window_info id="Structure" order="0" side_tool="true" weight="0.19171779" />
+      <window_info anchor="bottom" id="Terminal" order="10" weight="0.3282967" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.5641791" weight="0.3392857" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Code comment" order="12" />
+      <window_info anchor="bottom" id="DB Execution Console" order="7" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info id="DB Browser" order="3" weight="0.32927573" />
+      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Messages" order="11" sideWeight="0.5188834" visible="true" weight="0.43533486" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -308,24 +212,35 @@
     <MESSAGE value="change api" />
     <option name="LAST_COMMIT_MESSAGE" value="change api" />
   </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager />
-    <watches-manager />
-  </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/YunQiniuHelper/YunQiniuDefine.h">
+    <entry file="file://$PROJECT_DIR$/Podfile">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="17" column="16" lean-forward="true" selection-start-line="17" selection-start-column="16" selection-end-line="17" selection-end-column="16" />
-          <folding />
+        <state relative-caret-position="95">
+          <caret line="5" selection-start-line="5" selection-end-line="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/YunQiniuHelper/YunQiniuUploadImageTool.m">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1235">
+          <caret line="65" column="34" selection-start-line="65" selection-start-column="34" selection-end-line="65" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Podfile">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/YunQiniuHelper/YunQiniuUploadImageTool.m">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1235">
+          <caret line="65" column="34" selection-start-line="65" selection-start-column="34" selection-end-line="65" selection-end-column="34" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/YunQiniuHelper/YunQiniuHelper.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="342">
-          <caret line="18" column="18" lean-forward="false" selection-start-line="18" selection-start-column="18" selection-end-line="18" selection-end-column="18" />
-          <folding />
+          <caret line="18" column="18" selection-start-line="18" selection-start-column="18" selection-end-line="18" selection-end-column="18" />
         </state>
       </provider>
     </entry>
@@ -333,33 +248,27 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="95">
           <caret line="5" column="8" lean-forward="true" selection-start-line="5" selection-start-column="8" selection-end-line="5" selection-end-column="8" />
-          <folding>
-            <element signature="e#88#111#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/YunQiniuHelper/YunQiniuImgHelper.m">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="537">
-          <caret line="64" column="12" lean-forward="false" selection-start-line="64" selection-start-column="12" selection-end-line="64" selection-end-column="12" />
-          <folding />
+          <caret line="64" column="12" selection-start-line="64" selection-start-column="12" selection-end-line="64" selection-end-column="12" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/YunQiniuHelper/YunQiniuUploadData.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="285">
-          <caret line="15" column="0" lean-forward="true" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
-          <folding />
+          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/YunQiniuHelper/YunQiniuUploadData.m">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="285">
-          <caret line="15" column="9" lean-forward="false" selection-start-line="15" selection-start-column="9" selection-end-line="15" selection-end-column="9" />
-          <folding />
+          <caret line="15" column="9" selection-start-line="15" selection-start-column="9" selection-end-line="15" selection-end-column="9" />
         </state>
       </provider>
     </entry>
@@ -367,25 +276,27 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="95">
           <caret line="5" column="8" lean-forward="true" selection-start-line="5" selection-start-column="8" selection-end-line="5" selection-end-column="8" />
-          <folding>
-            <element signature="e#93#116#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/YunQiniuHelper/YunQiniuUploadImageTool.m">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="65" column="34" lean-forward="false" selection-start-line="65" selection-start-column="34" selection-end-line="65" selection-end-column="34" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Podfile">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="5" selection-start-line="5" selection-end-line="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/YunQiniuHelper/YunQiniuUploadImageTool.m">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="256">
+          <caret line="47" column="60" selection-start-line="47" selection-start-column="52" selection-end-line="47" selection-end-column="67" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/YunQiniuHelper/YunQiniuDefine.h">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="228">
-          <caret line="12" column="23" lean-forward="false" selection-start-line="12" selection-start-column="23" selection-end-line="12" selection-end-column="23" />
-          <folding />
+          <caret line="12" column="75" lean-forward="true" selection-start-line="12" selection-start-column="75" selection-end-line="12" selection-end-column="75" />
         </state>
       </provider>
     </entry>

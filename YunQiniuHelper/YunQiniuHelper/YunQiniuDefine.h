@@ -6,8 +6,8 @@
 #import <Foundation/Foundation.h>
 
 typedef enum : NSInteger {
-    QqHlpErr_errQnPara,
-    QqHlpErr_errImg,
+    QqHlpErr_errQnPara = 1,
+    QqHlpErr_errImg    = 2,
 } QiNiuHelperError;
 
 typedef void(^getQnParaBlock)(BOOL suc, NSString *token, NSString *cdnUrl);
