@@ -10,14 +10,6 @@
 
 + (void)setDelegate:(id)tg;
 
-/**
-*上传图片
-*
-*@param image需要上传的image
-*@param progress上传进度block
-*@param success成功block返回url地址
-*@param failure失败block
-*/
 + (void)uploadImage:(id)image
            progress:(QNUpProgressHandler)progress
             success:(void (^)(NSString *url))success

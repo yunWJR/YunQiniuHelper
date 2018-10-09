@@ -62,8 +62,11 @@
 
             QNDnsManager *dns = [[QNDnsManager alloc] init:paras networkInfo:[QNNetworkInfo normal]];
 
-            // 是否选择  https  上传
-            builder.zone = [[QNAutoZone alloc] initWithDns:dns];
+            //builder.zone = [[QNAutoZone alloc] initWithDns:dns]; // 7.2.5 废除
+            builder.dns = dns;
+
+            //是否选择 https 上传
+            builder.useHttps = YES;
 
             //设置断点续传
             NSError *error;
