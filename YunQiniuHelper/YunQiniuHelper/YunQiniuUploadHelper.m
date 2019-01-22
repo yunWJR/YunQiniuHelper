@@ -1,18 +1,15 @@
 //
-// Created by 王健 on 16/5/13.
-// Copyright (c) 2016 成都晟堃科技有限责任公司. All rights reserved.
+// Created by yun on 2019-01-22.
+// Copyright (c) 2019 skkj. All rights reserved.
 //
 
+#import "YunQiniuUploadHelper.h"
 #import "YunQiniuUploadConfig.h"
-#import "YunQiniuUploadImageTool.h"
 #import "QNResolver.h"
 #import "YunQiniuDefine.h"
+#import "YunQiniuFileModel.h"
 
-@implementation YunQiniuUploadImageTool
-
-+ (void)setDelegate:(id)tg {
-    YunQiniuUploadConfig.instance.delegate = tg;
-}
+@implementation YunQiniuUploadHelper
 
 + (void)getQnPara:(getQnParaBlock)rst {
     if (YunQiniuUploadConfig.instance.delegate &&
@@ -24,11 +21,10 @@
     }
 }
 
-// 上传单张图片
-+ (void)uploadImage:(id)image
-           progress:(QNUpProgressHandler)progress
-            success:(void (^)(NSString *url))success
-            failure:(void (^)(NSError *err))failure {
++ (void)uploadFile:(id)file
+          progress:(QNUpProgressHandler)progress
+           success:(void (^)(YunQiniuFileModel *file))success
+           failure:(void (^)(NSError *err))failure {
     [self getQnPara:^(BOOL suc, NSString *token, NSString *cdnUrl) {
         if (!suc) {
             if (failure) {failure([self errWithType:QqHlpErr_errQnPara]);}
@@ -36,11 +32,11 @@
 
         // 压缩
         NSData *data = nil;
-        if ([image isKindOfClass:UIImage.class]) {
-            data = UIImageJPEGRepresentation(image, YunQiniuUploadConfig.instance.cmpFactor);
+        if ([file isKindOfClass:UIImage.class]) {
+            data = UIImageJPEGRepresentation(file, YunQiniuUploadConfig.instance.cmpFactor);
         }
-        else if ([image isKindOfClass:NSData.class]) {
-            data = image;
+        else if ([file isKindOfClass:NSData.class]) {
+            data = file;
         }
         else {
             if (failure) {failure([self errWithType:QqHlpErr_errImg]);}
@@ -83,7 +79,12 @@
              complete:^(QNResponseInfo *info, NSString *key, NSDictionary *resp) {
                  if (info.statusCode == 200 && resp) {
                      if (success) {
-                         success([self getImgUrl:resp baseUrl:cdnUrl]);
+                         NSString *url = [self getFileUrl:resp baseUrl:cdnUrl];
+                         YunQiniuFileModel *fileData = [YunQiniuFileModel modelWithFileUrl:url
+                                                                                      resp:resp
+                                                                                       key:key];
+
+                         success(fileData);
                      }
                  }
                  else {
@@ -93,20 +94,19 @@
     }];
 }
 
-//上传多张图片
-+ (void)uploadImages:(NSArray *)imageList
-            progress:(void (^)(CGFloat))progress
-             success:(void (^)(NSArray<NSString *> *urlList))success
-             failure:(void (^)(NSError *err))failure {
-    if (imageList == nil || imageList.count == 0) {
++ (void)uploadFiles:(NSArray *)files
+           progress:(void (^)(CGFloat))progress
+            success:(void (^)(NSArray<YunQiniuFileModel *> *files))success
+            failure:(void (^)(NSError *err))failure {
+    if (files == nil || files.count == 0) {
         if (success) {success(nil);}
         return;
     }
 
-    NSMutableArray *listUrl = [[NSMutableArray alloc] init];
+    NSMutableArray <YunQiniuFileModel *> *fileList = [[NSMutableArray alloc] init];
 
     __block CGFloat totalPrgs = 0.0f;
-    __block CGFloat partPrgs = 1.0f / [imageList count];
+    __block CGFloat partPrgs = 1.0f / [files count];
     __block NSUInteger curIndex = 0;
 
     YunQiniuUploadConfig *upHlp = [YunQiniuUploadConfig instance];
@@ -116,8 +116,8 @@
         return;
     };
 
-    upHlp.sucBlock = ^(NSString *url) {
-        [listUrl addObject:url];
+    upHlp.sucFileBlock = ^(YunQiniuFileModel *url) {
+        [fileList addObject:url];
         curIndex++;
 
         totalPrgs += partPrgs;
@@ -125,38 +125,25 @@
             progress(totalPrgs);
         }
 
-        if ([listUrl count] == [imageList count]) {
-            success([listUrl copy]);
+        if ([fileList count] == [files count]) {
+            success([fileList copy]);
             return;
         }
         else {
-            [YunQiniuUploadImageTool uploadImage:imageList[curIndex]
+            [YunQiniuUploadHelper uploadFile:files[curIndex]
                                         progress:nil
-                                         success:weakHlp.sucBlock
+                                         success:weakHlp.sucFileBlock
                                          failure:weakHlp.failureBlock];
         }
     };
 
-    [YunQiniuUploadImageTool uploadImage:imageList[0]
+    [YunQiniuUploadHelper uploadFile:files[0]
                                 progress:nil
-                                 success:weakHlp.sucBlock
+                                 success:weakHlp.sucFileBlock
                                  failure:weakHlp.failureBlock];
 }
 
-+ (void)uploadImages:(NSArray *)imageList
-            progress:(void (^)(CGFloat))progress
-                  tg:(id)tg
-             success:(void (^)(NSArray<NSString *> *urlList))success
-             failure:(void (^)(NSError *err))failure {
-    [self setDelegate:tg];
-
-    [self uploadImages:imageList
-              progress:progress
-               success:success
-               failure:failure];
-}
-
-+ (NSString *)getImgUrl:(NSDictionary *)resp baseUrl:(NSString *)baseUrl {
++ (NSString *)getFileUrl:(NSDictionary *)resp baseUrl:(NSString *)baseUrl {
     if (YunQiniuUploadConfig.instance.delegate) {
         if ([YunQiniuUploadConfig.instance.delegate respondsToSelector:@selector(getFileUrlByResp:)]) {
             NSString *fileUrl = [YunQiniuUploadConfig.instance.delegate getFileUrlByResp:resp];

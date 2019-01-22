@@ -3,12 +3,12 @@
 // Copyright (c) 2016 成都晟堃科技有限责任公司. All rights reserved.
 //
 
-#import "YunQiniuUploadData.h"
+#import "YunQiniuUploadConfig.h"
 
-@implementation YunQiniuUploadData
+@implementation YunQiniuUploadConfig
 
-+ (YunQiniuUploadData *)instance {
-    static YunQiniuUploadData *_instance = nil;
++ (YunQiniuUploadConfig *)instance {
+    static YunQiniuUploadConfig *_instance = nil;
 
     @synchronized (self) {
         if (_instance == nil) {

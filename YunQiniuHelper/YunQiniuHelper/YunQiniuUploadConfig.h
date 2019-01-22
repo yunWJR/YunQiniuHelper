@@ -6,8 +6,9 @@
 #import <UIKit/UIKit.h>
 
 @protocol YunQiniuUploadImageDelegate;
+@class YunQiniuFileModel;
 
-@interface YunQiniuUploadData : NSObject
+@interface YunQiniuUploadConfig : NSObject
 
 @property (nonatomic, weak) id <YunQiniuUploadImageDelegate> delegate;
 
@@ -16,8 +17,10 @@
 
 @property (copy, nonatomic) void (^sucBlock)(NSString *url);
 
+@property (copy, nonatomic) void (^sucFileBlock)(YunQiniuFileModel *file);
+
 @property (copy, nonatomic) void (^failureBlock)(NSError *err);
 
-+ (YunQiniuUploadData *)instance;
++ (YunQiniuUploadConfig *)instance;
 
 @end

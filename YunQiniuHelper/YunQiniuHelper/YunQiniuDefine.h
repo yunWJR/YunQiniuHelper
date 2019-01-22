@@ -17,4 +17,7 @@ typedef void(^getQnParaBlock)(BOOL suc, NSString *token, NSString *cdnUrl);
 @required
 - (void)getQnPara:(getQnParaBlock)rst;
 
+@optional
+- (NSString *)getFileUrlByResp:(NSDictionary *)resp;
+
 @end
