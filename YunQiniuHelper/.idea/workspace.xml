@@ -1,12 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="afe093c1-9619-4cfb-a48d-8efe3c1f23d5" name="Default" comment="add YunQiniuUploadHelper">
+    <list default="true" id="afe093c1-9619-4cfb-a48d-8efe3c1f23d5" name="Default" comment="add api for file key">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/YunQiniuHelper/YunQiniuDefine.h" beforeDir="false" afterPath="$PROJECT_DIR$/YunQiniuHelper/YunQiniuDefine.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/YunQiniuHelper/YunQiniuHelper.h" beforeDir="false" afterPath="$PROJECT_DIR$/YunQiniuHelper/YunQiniuHelper.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/YunQiniuHelper/YunQiniuUploadHelper.h" beforeDir="false" afterPath="$PROJECT_DIR$/YunQiniuHelper/YunQiniuUploadHelper.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/YunQiniuHelper/YunQiniuUploadHelper.m" beforeDir="false" afterPath="$PROJECT_DIR$/YunQiniuHelper/YunQiniuUploadHelper.m" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -16,26 +12,42 @@
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="iphoneos_12206484e7323519acc20b4c31043a0b582e05a1" />
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/YunQiniuHelper/Info.plist">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/YunQiniuHelper/YunQiniuDefine.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="399">
-              <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
+            <state relative-caret-position="266">
+              <caret line="14" column="37" selection-start-line="14" selection-start-column="10" selection-end-line="14" selection-end-column="37" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/YunQiniuHelper/YunQiniuHelper.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="342">
+              <caret line="18" column="29" selection-start-line="18" selection-start-column="9" selection-end-line="18" selection-end-column="29" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/YunQiniuHelper/YunQiniuUploadConfig.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="158">
+              <caret line="10" column="31" selection-start-line="10" selection-start-column="11" selection-end-line="10" selection-end-column="31" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/YunQiniuHelper/YunQiniuUploadHelper.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="114">
-              <caret line="6" column="16" lean-forward="true" selection-start-line="6" selection-start-column="16" selection-end-line="6" selection-end-column="16" />
+            <state relative-caret-position="209">
+              <caret line="11" column="31" selection-start-line="11" selection-start-column="11" selection-end-line="11" selection-end-column="31" />
+              <folding>
+                <element signature="e#89#122#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -43,12 +55,11 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/YunQiniuHelper/YunQiniuUploadHelper.m">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="581">
-              <caret line="82" lean-forward="true" selection-start-line="82" selection-end-line="82" />
+            <state relative-caret-position="260">
+              <caret line="28" column="47" selection-start-line="28" selection-start-column="42" selection-end-line="28" selection-end-column="47" />
               <folding>
                 <element signature="e#0#2#0" />
                 <element signature="e#89#121#0" expanded="true" />
-                <element signature="e#3807#5359#0" />
               </folding>
             </state>
           </provider>
@@ -77,7 +88,6 @@
         <option value="$PROJECT_DIR$/YunQiniuHelper/YunQiniuUploadData.h" />
         <option value="$PROJECT_DIR$/YunQiniuHelper/YunQiniuFileModel.m" />
         <option value="$PROJECT_DIR$/YunQiniuHelper/YunQiniuFileModel.h" />
-        <option value="$PROJECT_DIR$/YunQiniuHelper/YunQiniuUploadConfig.h" />
         <option value="$PROJECT_DIR$/YunQiniuHelper/YunQiniuUploadDataHelper.h" />
         <option value="$PROJECT_DIR$/YunQiniuHelper/YunQiniuUploadDataHelper.m" />
         <option value="$PROJECT_DIR$/YunQiniuHelper/YunQiniuUploadConfig.m" />
@@ -86,13 +96,14 @@
         <option value="$PROJECT_DIR$/YunQiniuHelper/YunQiniuHelper.h" />
         <option value="$PROJECT_DIR$/YunQiniuHelper/YunQiniuDefine.h" />
         <option value="$PROJECT_DIR$/YunQiniuHelper/YunQiniuUploadHelper.m" />
+        <option value="$PROJECT_DIR$/YunQiniuHelper/YunQiniuUploadConfig.h" />
       </list>
     </option>
   </component>
   <component name="OCFindUsagesOptions" text="false" ivars="false" properties="true" derivedClasses="false" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="170" />
-    <option name="y" value="147" />
+    <option name="x" value="-1399" />
+    <option name="y" value="17" />
     <option name="width" value="1406" />
     <option name="height" value="1057" />
   </component>
@@ -102,7 +113,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Cidr.FilesView" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -123,7 +134,7 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
+      <pane id="Cidr.FilesView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -173,7 +184,8 @@
       <workItem from="1548134646933" duration="2800000" />
       <workItem from="1548137481915" duration="162000" />
       <workItem from="1548138447676" duration="347000" />
-      <workItem from="1548744804441" duration="447000" />
+      <workItem from="1548744804441" duration="661000" />
+      <workItem from="1548746441772" duration="1011000" />
     </task>
     <task id="LOCAL-00001" summary="change api">
       <created>1516677410319</created>
@@ -210,21 +222,28 @@
       <option name="project" value="LOCAL" />
       <updated>1548137463770</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="add api for file key">
+      <created>1548745292627</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1548745292627</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="6659000" />
+    <option name="totallyTimeSpent" value="7884000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="24" y="23" width="1406" height="1057" extended-state="0" />
+    <frame x="-1399" y="17" width="1406" height="1057" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Structure" order="0" side_tool="true" weight="0.19171779" />
       <window_info id="Designer" order="1" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info id="DB Browser" order="3" weight="0.32927573" />
-      <window_info active="true" content_ui="combo" id="Project" order="4" visible="true" weight="0.29351032" />
+      <window_info active="true" content_ui="combo" id="Project" order="4" visible="true" weight="0.23230088" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" sideWeight="0.6221979" weight="0.4247934" />
       <window_info anchor="bottom" id="Run" order="2" sideWeight="0.725973" weight="0.12087912" />
@@ -234,7 +253,7 @@
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32554945" />
       <window_info anchor="bottom" id="DB Execution Console" order="7" />
       <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.34428796" side_tool="true" weight="0.41399083" />
-      <window_info anchor="bottom" x="10" y="280" width="1259" height="240" id="Version Control" order="9" sideWeight="0.6562255" weight="0.41322315" />
+      <window_info anchor="bottom" x="10" y="280" width="1259" height="240" id="Version Control" order="9" sideWeight="0.6562255" visible="true" weight="0.25131994" />
       <window_info anchor="bottom" id="Terminal" order="10" weight="0.3282967" />
       <window_info anchor="bottom" id="Messages" order="11" sideWeight="0.5188834" visible="true" weight="0.43471074" />
       <window_info anchor="bottom" id="Code comment" order="12" />
@@ -290,20 +309,16 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
+    <option name="CHECK_NEW_TODO" value="false" />
     <MESSAGE value="change api" />
     <MESSAGE value="reform code" />
     <MESSAGE value="update for Qiniu 7.2.5" />
     <MESSAGE value="add YunQiniuUploadHelper" />
-    <option name="LAST_COMMIT_MESSAGE" value="add YunQiniuUploadHelper" />
+    <MESSAGE value="add api for file key" />
+    <option name="LAST_COMMIT_MESSAGE" value="add api for file key" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Podfile">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="14" selection-start-line="14" selection-end-line="14" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Pods/Headers/Public/Qiniu/QNFileRecorder.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="280">
@@ -335,23 +350,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/YunQiniuHelper/YunQiniuImgHelper.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="9" selection-start-line="9" selection-end-line="9" />
-          <folding>
-            <element signature="e#88#111#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/YunQiniuHelper/YunQiniuImgHelper.m">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="836">
-          <caret line="55" column="18" selection-start-line="55" selection-start-column="18" selection-end-line="55" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/YunQiniuHelper/YunQiniuFileModel.m">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="228">
@@ -380,34 +378,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/YunQiniuHelper/YunQiniuFileModel.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="7" column="28" selection-start-line="7" selection-start-column="11" selection-end-line="7" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/YunQiniuHelper/YunQiniuHelper.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="361">
-          <caret line="19" column="23" selection-start-line="19" selection-start-column="9" selection-end-line="19" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/YunQiniuHelper/YunQiniuUploadConfig.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="10" column="31" selection-start-line="10" selection-start-column="11" selection-end-line="10" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/YunQiniuHelper/YunQiniuUploadConfig.m">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="437">
-          <caret line="23" column="15" selection-start-line="23" selection-start-column="15" selection-end-line="23" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/YunQiniuHelper/YunQiniuUploadImageTool.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="152">
@@ -418,32 +388,86 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/YunQiniuHelper/Info.plist">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Podfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="12" column="12" selection-start-line="12" selection-start-column="7" selection-end-line="12" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/YunQiniuHelper/YunQiniuFileModel.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="7" column="28" selection-start-line="7" selection-start-column="11" selection-end-line="7" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/YunQiniuHelper/YunQiniuImgHelper.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="9" selection-start-line="9" selection-end-line="9" />
+          <folding>
+            <element signature="e#88#111#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/YunQiniuHelper/YunQiniuImgHelper.m">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="486">
+          <caret line="55" column="18" selection-start-line="55" selection-start-column="18" selection-end-line="55" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/YunQiniuHelper/YunQiniuUploadConfig.m">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="23" column="15" selection-start-line="23" selection-start-column="15" selection-end-line="23" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/YunQiniuHelper/YunQiniuDefine.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="14" column="37" selection-start-line="14" selection-start-column="10" selection-end-line="14" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/YunQiniuHelper/YunQiniuUploadConfig.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="158">
+          <caret line="10" column="31" selection-start-line="10" selection-start-column="11" selection-end-line="10" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/YunQiniuHelper/YunQiniuHelper.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="18" column="29" selection-start-line="18" selection-start-column="9" selection-end-line="18" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/YunQiniuHelper/YunQiniuUploadHelper.m">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="581">
-          <caret line="82" lean-forward="true" selection-start-line="82" selection-end-line="82" />
+        <state relative-caret-position="260">
+          <caret line="28" column="47" selection-start-line="28" selection-start-column="42" selection-end-line="28" selection-end-column="47" />
           <folding>
             <element signature="e#0#2#0" />
             <element signature="e#89#121#0" expanded="true" />
-            <element signature="e#3807#5359#0" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/YunQiniuHelper/YunQiniuUploadHelper.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="6" column="16" lean-forward="true" selection-start-line="6" selection-start-column="16" selection-end-line="6" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/YunQiniuHelper/Info.plist">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/YunQiniuHelper/YunQiniuDefine.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="399">
-          <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
+        <state relative-caret-position="209">
+          <caret line="11" column="31" selection-start-line="11" selection-start-column="11" selection-end-line="11" selection-end-column="31" />
+          <folding>
+            <element signature="e#89#122#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
