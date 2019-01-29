@@ -20,4 +20,6 @@ typedef void(^getQnParaBlock)(BOOL suc, NSString *token, NSString *cdnUrl);
 @optional
 - (NSString *)getFileUrlByResp:(NSDictionary *)resp;
 
+- (NSString *)fileKeyByFile:(id)fileData; // todo
+
 @end

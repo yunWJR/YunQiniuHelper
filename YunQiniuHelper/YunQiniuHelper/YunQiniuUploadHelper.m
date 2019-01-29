@@ -22,6 +22,7 @@
 }
 
 + (void)uploadFile:(id)file
+           fileKey:(NSString *)fileKey
           progress:(QNUpProgressHandler)progress
            success:(void (^)(YunQiniuFileModel *file))success
            failure:(void (^)(NSError *err))failure {
@@ -73,8 +74,15 @@
                                                           checkCrc:NO
                                                 cancellationSignal:nil];
         QNUploadManager *upMg = [QNUploadManager sharedInstanceWithConfiguration:cfg];
+
+        NSString *qnKey = fileKey;
+        if (qnKey == nil &&
+            [YunQiniuUploadConfig.instance.delegate respondsToSelector:@selector(fileKeyByFile:)]) {
+            qnKey = [YunQiniuUploadConfig.instance.delegate fileKeyByFile:file];
+        }
+
         [upMg putData:data
-                  key:nil
+                  key:qnKey
                 token:token
              complete:^(QNResponseInfo *info, NSString *key, NSDictionary *resp) {
                  if (info.statusCode == 200 && resp) {
@@ -94,7 +102,19 @@
     }];
 }
 
++ (void)uploadFile:(id)file
+          progress:(QNUpProgressHandler)progress
+           success:(void (^)(YunQiniuFileModel *file))success
+           failure:(void (^)(NSError *err))failure {
+    [self uploadFile:file
+             fileKey:nil
+            progress:progress
+             success:success
+             failure:failure];
+}
+
 + (void)uploadFiles:(NSArray *)files
+           fileKeys:(NSArray<NSString *> *)fileKeys
            progress:(void (^)(CGFloat))progress
             success:(void (^)(NSArray<YunQiniuFileModel *> *files))success
             failure:(void (^)(NSError *err))failure {
@@ -130,17 +150,40 @@
             return;
         }
         else {
+            NSString *fileKey;
+            if (fileKeys.count > curIndex) {
+                fileKey = fileKeys[curIndex];
+            }
+
             [YunQiniuUploadHelper uploadFile:files[curIndex]
-                                        progress:nil
-                                         success:weakHlp.sucFileBlock
-                                         failure:weakHlp.failureBlock];
+                                     fileKey:fileKey
+                                    progress:nil
+                                     success:weakHlp.sucFileBlock
+                                     failure:weakHlp.failureBlock];
         }
     };
 
+    NSString *fileKey;
+    if (fileKeys.count > 0) {
+        fileKey = fileKeys[0];
+    }
+
     [YunQiniuUploadHelper uploadFile:files[0]
-                                progress:nil
-                                 success:weakHlp.sucFileBlock
-                                 failure:weakHlp.failureBlock];
+                             fileKey:fileKey
+                            progress:nil
+                             success:weakHlp.sucFileBlock
+                             failure:weakHlp.failureBlock];
+}
+
++ (void)uploadFiles:(NSArray *)files
+           progress:(void (^)(CGFloat))progress
+            success:(void (^)(NSArray<YunQiniuFileModel *> *files))success
+            failure:(void (^)(NSError *err))failure {
+    [self uploadFiles:files
+             fileKeys:nil
+             progress:progress
+              success:success
+              failure:failure];
 }
 
 + (NSString *)getFileUrl:(NSDictionary *)resp baseUrl:(NSString *)baseUrl {
